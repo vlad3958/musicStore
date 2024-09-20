@@ -1,0 +1,23 @@
+.navbar-shop-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+.navbar-shop-items li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.navbar-shop-items hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+}
