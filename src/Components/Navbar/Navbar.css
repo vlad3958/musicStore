@@ -1,0 +1,28 @@
+.navbar{
+   
+    display: flex;
+    height: 2%;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+.nav-menu{
+  
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+.muza-text{
+    margin-left: 2%;
+}
+.navbar-rightside{
+display: flex;
+align-items: center;
+gap: 45px;
+}
+.navbar-rightside img{
+width: 18%;
+height: auto;
+
+}
