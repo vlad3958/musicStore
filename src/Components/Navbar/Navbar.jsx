@@ -9,8 +9,8 @@ import './Navbar.css'
  <p className='muza-text' >Muza</p>
 
      <ul className='nav-menu'>
-        <li>Home</li>
-        <li><Link style={{textDecoration:'none'}} to='/shop/guitars'>Shop</Link></li>
+        <li><Link style={{textDecoration:'none'}} to='/'>Home</Link></li>
+        <li style={{color:"red"}}><Link style={{textDecoration:'none'}} to='/shop/guitars'>Shop</Link></li>
         <li><Link style={{textDecoration:'none'}} to='/about'>About</Link></li>
         <li>Contact</li>
      </ul>

@@ -1,0 +1,10 @@
+h1{
+    color:rgb(55, 255, 122);
+    position: absolute;
+top: 30%;
+left: 2%;
+font-size: 60px;
+}
+video{
+    z-index: 0;
+}

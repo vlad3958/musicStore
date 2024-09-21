@@ -9,12 +9,14 @@ import Shop from './Pages/Shop';
 import Cart from './Pages/Cart';
 import About from './Pages/About';
 import Amplifiers from './Pages/Amplifiers'
+import Home from './Pages/Home';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Navbar />
       <Routes>
+      <Route path='/' element={<Home/>}/>
         <Route path='/shop/guitars' element={<Shop/>}/>
         <Route path='/shop/amplifiers' element={<Amplifiers/>}/>
         <Route path='/about' element={<About/>}/>

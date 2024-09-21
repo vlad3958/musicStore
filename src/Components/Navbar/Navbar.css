@@ -19,6 +19,7 @@ a{
 }
 .muza-text{
     margin-left: 2%;
+    font-size: 22px;
 }
 .navbar-rightside{
 display: flex;

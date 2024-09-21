@@ -12,8 +12,13 @@ const NavbarShopItems = () => {
       setMenu("amplifiers");
     } else if (location.pathname === '/shop/guitars') {
       setMenu("guitars") ;
-    }
-    // Добавьте другие пути, если нужно
+    } else if (location.pathname === '/shop/audio-interfaces') {
+        setMenu("audio interfaces") ;
+      } else if (location.pathname === '/shop/synthesizers') {
+        setMenu("synthesizers") ;
+      } else if (location.pathname === '/shop/accesories') {
+        setMenu("accesories") ;
+      } 
   }, [location.pathname]);
 
   return (
@@ -28,13 +33,16 @@ const NavbarShopItems = () => {
           {menu === "amplifiers" && <hr />}
         </li>
         <li>
-          Audio Interfaces {menu === "audio interfaces" && <hr />}
+        <Link style={{ all: 'unset' }} to='/shop/audio-interfaces'> Audio Interfaces</Link> 
+        {menu === "audio interfaces" && <hr />}
         </li>
         <li >
-          Synthesizers {menu === "synthesizers" && <hr />}
+        <Link style={{ all: 'unset' }} to='/shop/synthesizers'> Synthesizers </Link> 
+          {menu === "synthesizers" && <hr />}
         </li>
         <li>
-          Accessories {menu === "accesories" && <hr />}
+        <Link style={{ all: 'unset' }} to='/shop/accesories'> Accessories  </Link> 
+          {menu === "accesories" && <hr />}
         </li>
       </ul>
     </div>
