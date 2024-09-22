@@ -16,8 +16,8 @@ const NavbarShopItems = () => {
         setMenu("audio interfaces") ;
       } else if (location.pathname === '/shop/synthesizers') {
         setMenu("synthesizers") ;
-      } else if (location.pathname === '/shop/accesories') {
-        setMenu("accesories") ;
+      } else if (location.pathname === '/shop/accessories') {
+        setMenu("accessories") ;
       } 
   }, [location.pathname]);
 
@@ -41,8 +41,8 @@ const NavbarShopItems = () => {
           {menu === "synthesizers" && <hr />}
         </li>
         <li>
-        <Link style={{ all: 'unset' }} to='/shop/accesories'> Accessories  </Link> 
-          {menu === "accesories" && <hr />}
+        <Link style={{ all: 'unset' }} to='/shop/accessories'> Accessories  </Link> 
+          {menu === "accessories" && <hr />}
         </li>
       </ul>
     </div>

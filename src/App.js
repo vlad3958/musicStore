@@ -10,15 +10,19 @@ import Cart from './Pages/Cart';
 import About from './Pages/About';
 import Amplifiers from './Pages/Amplifiers'
 import Home from './Pages/Home';
+import Footer from './Components/Footer/Footer';
+import Accessories from './Pages/Accessories';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Navbar />
+    
       <Routes>
       <Route path='/' element={<Home/>}/>
         <Route path='/shop/guitars' element={<Shop/>}/>
         <Route path='/shop/amplifiers' element={<Amplifiers/>}/>
+        <Route path='/shop/accessories' element={<Accessories/>}/>
         <Route path='/about' element={<About/>}/>
 
 <Route path="product" element={<Product/>}>
@@ -28,6 +32,8 @@ function App() {
 <Route path='/cart' element={<Cart/>}/>
 <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
+      <Footer/>
+
       </BrowserRouter>
     </div>
   );
