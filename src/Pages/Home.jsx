@@ -69,10 +69,11 @@ style={{width:"100%", height:"auto"}}></video>
 </div>
 
 <div className="fixed-photos">
+<h2 className='burning-text'>Burning ideas...</h2>
   <div className='fixed-photo-item-first'></div>
   <div className='fixed-photo-item-second'></div>
 </div>
-<h2>Burning ideas...</h2>
+
 
 
     </div>

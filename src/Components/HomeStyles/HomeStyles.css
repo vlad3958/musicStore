@@ -93,12 +93,12 @@ width: 100%;
     background-color: rgb(214, 193, 97);
 }
 .strings-photo{
- 
+ display: flex;
     width: 40%;
-    height: auto;
+    justify-content: start;
 }
 .strings-photo img{
-    width: 47vh;
+   width: 400px;
     height: auto;
    
 }
@@ -122,4 +122,7 @@ width: 100%;
   margin-top: 7%;
   font-size: 19px;
   color: rgb(199, 67, 67);
+}
+.burning-text{
+    font-weight: 600;
 }

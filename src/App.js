@@ -5,13 +5,14 @@ import Navbar from './Components/Navbar/Navbar'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Product from './Pages/Product';
 import LoginSignup from './Pages/LoginSignup';
-import Shop from './Pages/Shop';
+
 import Cart from './Pages/Cart';
 import About from './Pages/About';
-import Amplifiers from './Pages/Amplifiers'
+
 import Home from './Pages/Home';
 import Footer from './Components/Footer/Footer';
-import Accessories from './Pages/Accessories';
+
+import ShopCategory from './Pages/ShopCategory';
 function App() {
   return (
     <div className="App">
@@ -20,13 +21,15 @@ function App() {
     
       <Routes>
       <Route path='/' element={<Home/>}/>
-        <Route path='/shop/guitars' element={<Shop/>}/>
-        <Route path='/shop/amplifiers' element={<Amplifiers/>}/>
-        <Route path='/shop/accessories' element={<Accessories/>}/>
+        <Route path='/shop/guitars' element={<ShopCategory category='guitars'/>}/>
+        <Route path='/shop/amplifiers' element={<ShopCategory category='amplifiers'/>}/>
+        <Route path='/shop/accessories' element={<ShopCategory category='accessories'/>}/>
+        <Route path='/shop/audio-interfaces' element={<ShopCategory category='audio interfaces'/>}/>
+        <Route path='/shop/synthesizers' element={<ShopCategory category='synthesizers'/>}/>
         <Route path='/about' element={<About/>}/>
 
-<Route path="product" element={<Product/>}>
-  <Route path=' :productId' element={<Product/>}/>
+<Route path='/product' element={<Product/>}>
+  <Route path=':productId' element={<Product/>}/>
 </Route>
 
 <Route path='/cart' element={<Cart/>}/>
