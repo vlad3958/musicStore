@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
-
+import { Authenticator } from '@aws-amplify/ui-react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Product from './Pages/Product';
 import LoginSignup from './Pages/LoginSignup';

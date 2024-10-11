@@ -3,6 +3,9 @@ import { Amplify } from 'aws-amplify';
 import './css/LoginSignup.css'
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
+
+import awsExports from '../config';
+Amplify.configure(awsExports);
 const LoginSignup = () => {
   return (
     <div className='login'>

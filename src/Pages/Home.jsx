@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import sampleVideo from '../Components/Assets/vinyl.mp4';
 import '../Components/HomeStyles/HomeStyles.css'
 import arrival_1 from '../Components/Assets/arrival_1.jpg';
 import arrival_2 from '../Components/Assets/arrival_2.jpg';
@@ -10,8 +9,14 @@ import girl_guitar from '../Components/Assets/girl_guitar.jpg'
 const Home = () => {
   return (
     <div>
-<video  src={sampleVideo} autoPlay loop muted playsInline 
-style={{width:"100%", height:"auto"}}></video>
+ <video
+        src="https://vinylmp4.s3.amazonaws.com/vinyl.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ width: "100%", height: "auto" }}
+      />
 
 <h1>Music store</h1>
 
