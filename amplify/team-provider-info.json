@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-musicstore-dev-02bce-authRole",
+      "UnauthRoleArn": "arn:aws:iam::009599796337:role/amplify-musicstore-dev-02bce-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::009599796337:role/amplify-musicstore-dev-02bce-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-musicstore-dev-02bce-deployment",
+      "UnauthRoleName": "amplify-musicstore-dev-02bce-unauthRole",
+      "StackName": "amplify-musicstore-dev-02bce",
+      "StackId": "arn:aws:cloudformation:us-east-1:009599796337:stack/amplify-musicstore-dev-02bce/b54fc1d0-87b8-11ef-b1c8-1279bf9b0d85",
+      "AmplifyAppId": "durrs1ryg8d1p"
+    },
+    "categories": {
+      "auth": {
+        "musicstore14f3e22f": {}
+      }
+    }
+  }
+}

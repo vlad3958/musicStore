@@ -4,7 +4,9 @@ import './css/LoginSignup.css'
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-import awsExports from '../config';
+
+
+import awsExports from '../aws-exports';
 Amplify.configure(awsExports);
 const LoginSignup = () => {
   return (
@@ -12,7 +14,7 @@ const LoginSignup = () => {
        <Authenticator>
       {({ signOut, user }) => (
         <main >
-          <h1>Hello {user.username}</h1>
+          <h3>Hello {user.username}</h3>
           <button onClick={signOut}>Sign out</button>
         </main>
       )}
