@@ -4,6 +4,13 @@ import './Navbar.css'
  import {Link} from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
 
+import { getCurrentUser } from 'aws-amplify/auth';
+
+import { Amplify } from 'aws-amplify';
+import awsExports from '../../aws-exports.js';
+Amplify.configure(awsExports);
+
+
  const Navbar = () => {
   const {getTotalCartItems}=useContext(ShopContext)
 
@@ -18,6 +25,7 @@ import { ShopContext } from '../../Context/ShopContext';
         <li>Contact</li>
      </ul>
      <div className='navbar-rightside'>
+     
      <Link to='/login'><button>Login</button></Link>
      <Link to='/cart'><img src={cart_icon} alt="" /></Link>
      <div className="nav-cart-count"><p>{getTotalCartItems()}</p></div>
