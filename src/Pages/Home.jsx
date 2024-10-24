@@ -1,12 +1,81 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import '../Components/HomeStyles/HomeStyles.css'
+import './css/HomeStyles.css'
 import arrival_1 from '../Components/Assets/arrival_1.jpg';
 import arrival_2 from '../Components/Assets/arrival_2.jpg';
 import arrival_3 from '../Components/Assets/arrival_3.jpg';
 import home_studio from '../Components/Assets/home_studio.jpg'
 import girl_guitar from '../Components/Assets/girl_guitar.jpg'
+import Slider from 'react-slick'; 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import guitars_1 from '../Components/Assets/guitars_1.png';
+import guitars_2 from '../Components/Assets/guitars_2.png';
+import guitars_3 from '../Components/Assets/guitars_3.png';
+import guitars_4 from '../Components/Assets/guitars_4.png';
+
+
+const ProductCarousel = ({ products }) => {
+  const settings = {
+    dots: true,            // Enable dots for pagination
+    infinite: true,        // Infinite loop sliding
+    speed: 500,            // Transition speed
+    slidesToShow: 3,       // Show 3 items at once
+    slidesToScroll: 1,     // Scroll 1 item at a time
+    responsive: [          // Responsive breakpoints
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  return (
+    <div className="product-carousel">
+      <Slider {...settings}>
+        {products.map((product, index) => (
+          <div key={index} className="carousel-item">
+            <img src={product.image} alt={product.name} />
+            <h3>{product.name}</h3>
+            <p>Price: ${product.price}</p>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
+
+// Example usage with a sample product array
+const products = [
+  { id: 1, name: 'Fender Blues Junior IV', image: guitars_1, price: 799 },
+  { id: 2, name: 'Gibson Les Paul Standard', image: guitars_2, price: 2499 },
+  { id: 3, name: 'Ibanez RG550', image: guitars_3, price: 999 },
+  { id: 4, name: 'PRS SE Custom 24', image: guitars_4, price: 850 }
+];
+
 const Home = () => {
+ 
   return (
     <div>
  <video
@@ -72,6 +141,8 @@ const Home = () => {
      <Link style={{textDecoration:'none'}} to='/shop/accessories'>Go to Accessories {'>'}</Link>
      </div>
 </div>
+
+<ProductCarousel products={products} />
 
 <div className="fixed-photos">
 <h2 className='burning-text'>Burning ideas...</h2>

@@ -14,7 +14,7 @@ const LoginSignup = () => {
        <Authenticator>
       {({ signOut, user }) => (
         <main >
-          <h3>Hello {user.username} {user.signInDetails} </h3>
+          <h3>Hello {user.username}  </h3>
           <button onClick={signOut}>Sign out</button>
         </main>
       )}
