@@ -8,11 +8,23 @@ import amp_2 from './amp_2.png'
 import amp_3 from './amp_3.png'
 import amp_4 from './amp_4.jpg'
 
+import audio_interfaces1 from './audio_interfaces1.jpg'
+import audio_interfaces2 from './audio_interfaces2.jpg'
+import audio_interfaces3 from './audio_interfaces3.jpg'
+import audio_interfaces4 from './audio_interfaces4.jpg'
+
 import synthesizers_1 from './synthesizers_1.jpg'
 import synthesizers_2 from './synthesizers_2.jpg'
 import synthesizers_3 from './synthesizers_3.jpg'
 import synthesizers_4 from './synthesizers_4.jpg'
 
+import accessories1 from './accessories1.jpg'
+import accessories2 from './accessories2.jpg'
+import accessories3 from './accessories3.jpg'
+import accessories4 from './accessories4.jpg'
+import accessories5 from './accessories5.jpg'
+import accessories6 from './accessories6.jpg'
+import accessories7 from './accessories7.jpg'
 const all_products = [
     // Category 1: Guitars
     { id: 1, name: 'Fender Blues Junior IV', image: guitars_1, price: 799, category: 'guitars' },
@@ -43,32 +55,32 @@ const all_products = [
     { id: 24, name: 'Orange Crush 35RT', image: amp_4, price: 299, category: 'amplifiers' },
 
     // Category 3: audio_interfaces
-    { id: 25, name: 'Boss DS-1 Distortion', image: 'audio_interfaces_25', price: 59, category: 'audio interfaces' },
-    { id: 26, name: 'Electro-Harmonix Big Muff Pi', image: 'audio_interfaces_26', price: 89, category: 'audio interfaces' },
-    { id: 27, name: 'MXR M169 Carbon Copy', image: 'audio_interfaces_27', price: 149, category: 'audio interfaces' },
-    { id: 28, name: 'TC Electronic Hall of Fame 2', image: 'audio_interfaces_28', price: 129, category: 'audio interfaces' },
-    { id: 29, name: 'Strymon Timeline', image: 'audio_interfaces_29', price: 449, category: 'audio interfaces' },
-    { id: 30, name: 'EarthQuaker Devices Avalanche Run', image: 'audio_interfaces_30', price: 299, category: 'audio interfaces' },
-    { id: 31, name: 'Wampler Tumnus', image: 'audio_interfaces_31', price: 179, category: 'audio interfaces' },
-    { id: 32, name: 'Ibanez Tube Screamer TS808', image: 'audio_interfaces_32', price: 179, category: 'audio interfaces' },
-    { id: 33, name: 'Boss RC-5 Loop Station', image: 'audio_interfaces_33', price: 229, category: 'audio interfaces' },
-    { id: 34, name: 'Walrus Audio Slo', image: 'audio_interfaces_34', price: 199, category: 'audio interfaces' },
-    { id: 35, name: 'JHS Morning Glory V4', image: 'audio_interfaces_35', price: 199, category: 'audio interfaces' },
-    { id: 36, name: 'Keeley Caverns V2', image: 'audio_interfaces_36', price: 179, category: 'audio interfaces' },
+    { id: 25, name: 'Boss DS-1 Distortion', image: audio_interfaces1, price: 59, category: 'audio interfaces' },
+    { id: 26, name: 'Electro-Harmonix Big Muff Pi', image: audio_interfaces2, price: 89, category: 'audio interfaces' },
+    { id: 27, name: 'MXR M169 Carbon Copy', image: audio_interfaces3, price: 149, category: 'audio interfaces' },
+    { id: 28, name: 'TC Electronic Hall of Fame 2', image: audio_interfaces4, price: 129, category: 'audio interfaces' },
+    { id: 29, name: 'Strymon Timeline', image: audio_interfaces1, price: 449, category: 'audio interfaces' },
+    { id: 30, name: 'EarthQuaker Devices Avalanche Run', image: audio_interfaces2, price: 299, category: 'audio interfaces' },
+    { id: 31, name: 'Wampler Tumnus', image: audio_interfaces3, price: 179, category: 'audio interfaces' },
+    { id: 32, name: 'Ibanez Tube Screamer TS808', image: audio_interfaces4, price: 179, category: 'audio interfaces' },
+    { id: 33, name: 'Boss RC-5 Loop Station', image: audio_interfaces1, price: 229, category: 'audio interfaces' },
+    { id: 34, name: 'Walrus Audio Slo', image: audio_interfaces2, price: 199, category: 'audio interfaces' },
+    { id: 35, name: 'JHS Morning Glory V4', image: audio_interfaces3, price: 199, category: 'audio interfaces' },
+    { id: 36, name: 'Keeley Caverns V2', image: audio_interfaces4, price: 179, category: 'audio interfaces' },
 
     // Category 4: Accessories
-    { id: 37, name: 'D\'Addario EXL110 Strings', image: 'accessories_37', price: 6, category: 'accessories' },
-    { id: 38, name: 'Ernie Ball 2221 Regular Slinky', image: 'accessories_38', price: 7, category: 'accessories' },
-    { id: 39, name: 'Jim Dunlop Tortex Standard Picks', image: 'accessories_39', price: 4, category: 'accessories' },
-    { id: 40, name: 'Fender FT-1 Pro Clip-On Tuner', image: 'accessories_40', price: 15, category: 'accessories' },
-    { id: 41, name: 'Planet Waves Guitar Cable', image: 'accessories_41', price: 19, category: 'accessories' },
-    { id: 42, name: 'Levy\'s Leather Strap', image: 'accessories_42', price: 45, category: 'accessories' },
-    { id: 43, name: 'D\'Addario Planet Waves Capo', image: 'accessories_43', price: 29, category: 'accessories' },
-    { id: 44, name: 'Jim Dunlop Cry Baby Wah', image: 'accessories_44', price: 129, category: 'accessories' },
-    { id: 45, name: 'Korg Pitchblack Tuner', image: 'accessories_45', price: 69, category: 'accessories' },
-    { id: 46, name: 'Fender Custom Shop Tool Kit', image: 'accessories_46', price: 60, category: 'accessories' },
-    { id: 47, name: 'D\'Addario Pro-Winder', image: 'accessories_47', price: 10, category: 'accessories' },
-    { id: 48, name: 'Gator Frameworks Guitar Stand', image: 'accessories_48', price: 39, category: 'accessories' },
+    { id: 37, name: 'D\'Addario EXL110 Strings', image: accessories1, price: 6, category: 'accessories' },
+    { id: 38, name: 'Ernie Ball 2221 Regular Slinky', image: accessories2, price: 7, category: 'accessories' },
+    { id: 39, name: 'Jim Dunlop Tortex Standard Picks', image: accessories3, price: 4, category: 'accessories' },
+    { id: 40, name: 'Fender FT-1 Pro Clip-On Tuner', image: accessories4, price: 15, category: 'accessories' },
+    { id: 41, name: 'Planet Waves Guitar Cable', image: accessories5, price: 19, category: 'accessories' },
+    { id: 42, name: 'Levy\'s Leather Strap', image: accessories6, price: 45, category: 'accessories' },
+    { id: 43, name: 'D\'Addario Planet Waves Capo', image: accessories7, price: 29, category: 'accessories' },
+    { id: 44, name: 'Jim Dunlop Cry Baby Wah', image: accessories1, price: 129, category: 'accessories' },
+    { id: 45, name: 'Korg Pitchblack Tuner', image: accessories2, price: 69, category: 'accessories' },
+    { id: 46, name: 'Fender Custom Shop Tool Kit', image: accessories3, price: 60, category: 'accessories' },
+    { id: 47, name: 'D\'Addario Pro-Winder', image: accessories4, price: 10, category: 'accessories' },
+    { id: 48, name: 'Gator Frameworks Guitar Stand', image: accessories5, price: 39, category: 'accessories' },
 
     // Category 5: synthesizers
     { id: 49, name: 'Yamaha P-125 Digital Piano', image: synthesizers_1, price: 649, category: 'synthesizers' },

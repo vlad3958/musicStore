@@ -10,12 +10,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import guitars_1 from '../Components/Assets/guitars_1.png';
-import guitars_2 from '../Components/Assets/guitars_2.png';
-import guitars_3 from '../Components/Assets/guitars_3.png';
-import guitars_4 from '../Components/Assets/guitars_4.png';
-
-
+import amp_1 from '../Components/Assets/amp_1.png'
+import amp_2 from '../Components/Assets/amp_2.png'
+import amp_3 from '../Components/Assets/amp_3.png'
+import amp_4 from '../Components/Assets/amp_4.jpg'
 const ProductCarousel = ({ products }) => {
   const settings = {
     dots: true,            // Enable dots for pagination
@@ -68,10 +66,11 @@ const ProductCarousel = ({ products }) => {
 
 // Example usage with a sample product array
 const products = [
-  { id: 1, name: 'Fender Blues Junior IV', image: guitars_1, price: 799 },
-  { id: 2, name: 'Gibson Les Paul Standard', image: guitars_2, price: 2499 },
-  { id: 3, name: 'Ibanez RG550', image: guitars_3, price: 999 },
-  { id: 4, name: 'PRS SE Custom 24', image: guitars_4, price: 850 }
+  { id: 1, name: 'Marshall DSL40CR', image: amp_1, price: 749, category: 'amplifiers' },
+  { id: 2, name: 'Fender Hot Rod Deluxe IV', image: amp_2, price: 999, category: 'amplifiers' },
+  { id: 3, name: 'Vox AC30C2', image: amp_3, price: 1199, category: 'amplifiers' },
+  { id: 4, name: 'Orange Rocker 32', image: amp_4, price: 999, category: 'amplifiers' },
+ 
 ];
 
 const Home = () => {
@@ -141,6 +140,9 @@ const Home = () => {
      <Link style={{textDecoration:'none'}} to='/shop/accessories'>Go to Accessories {'>'}</Link>
      </div>
 </div>
+
+<h2 className='text-amps'>Our amps</h2>
+<hr />
 
 <ProductCarousel products={products} />
 
