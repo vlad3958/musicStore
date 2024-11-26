@@ -44,8 +44,8 @@ hr{
 }
 .home-studio{
     display: flex;
-    justify-content: space-between;
 margin-top: 10%;
+gap: 70px;
 }
 .home-studio-text{
     display: flex;
@@ -66,11 +66,10 @@ margin-top: 10%;
 }
 .home-studio-photo{
  display: flex;
- justify-content: end;
 }
 
 .home-studio img{
-   width: 80%;
+   width: 400px;
    height: auto;
 }
 .fixed-photos{
@@ -94,13 +93,11 @@ width: 100%;
 }
 .strings-photo{
  display: flex;
-    width: 40%;
-    justify-content: start;
+justify-content: start;
 }
 .strings-photo img{
    width: 400px;
     height: auto;
-   
 }
 .strings-text{
     display: flex;

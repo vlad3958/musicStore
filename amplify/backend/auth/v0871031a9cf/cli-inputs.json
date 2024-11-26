@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "musicstore14f3e22f_identitypool_14f3e22f",
+    "identityPoolName": "v0871031a9cf_identitypool_1031a9cf",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "musics14f3e22f",
-    "userPoolName": "musicstore14f3e22f_userpool_14f3e22f",
+    "resourceNameTruncated": "v0871031a9cf",
+    "userPoolName": "v0871031a9cf_userpool_1031a9cf",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "musics14f3e22f_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "v087101031a9cf_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "14f3e22f",
-    "resourceName": "musicstore14f3e22f",
+    "sharedId": "1031a9cf",
+    "resourceName": "v0871031a9cf",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
     "userPoolGroupList": [],

@@ -9,8 +9,7 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import Footer from './Components/Footer/Footer';
 import ShopCategory from './Pages/ShopCategory';
-
-import all_products from './Components/Assets/all_products';
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -52,13 +51,14 @@ function App() {
       <Navbar />
     
       <Routes>
-      <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/shop/guitars' element={<ShopCategory category='guitars'/>}/>
         <Route path='/shop/amplifiers' element={<ShopCategory category='amplifiers'/>}/>
         <Route path='/shop/accessories' element={<ShopCategory category='accessories'/>}/>
         <Route path='/shop/audio-interfaces' element={<ShopCategory category='audio interfaces'/>}/>
         <Route path='/shop/synthesizers' element={<ShopCategory category='synthesizers'/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
 
 <Route path='/product' element={<Product/>}>
   <Route path=':productId' element={<Product/>}/>

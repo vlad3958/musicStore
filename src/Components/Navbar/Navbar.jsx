@@ -16,13 +16,13 @@ Amplify.configure(awsExports);
 
   return (
     <div className='navbar'>
- <p className='muza-text' >Muza</p>
+ <p className='muza-text' ><Link style={{textDecoration:'none'}} to='/'>Muza</Link></p>
 
      <ul className='nav-menu'>
         <li><Link style={{textDecoration:'none'}} to='/'>Home</Link></li>
         <li style={{color:"red"}}><Link style={{textDecoration:'none'}} to='/shop/guitars'>Shop</Link></li>
         <li><Link style={{textDecoration:'none'}} to='/about'>About</Link></li>
-        <li>Contact</li>
+        <li><Link style={{textDecoration:'none'}} to='/contact'>Contact</Link></li>
      </ul>
      <div className='navbar-rightside'>
      
