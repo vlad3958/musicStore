@@ -16,5 +16,23 @@
         "v0871031a9cf": {}
       }
     }
+  },
+  "whatislove": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-v087-whatislove-1e788-authRole",
+      "UnauthRoleArn": "arn:aws:iam::528757785127:role/amplify-v087-whatislove-1e788-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::528757785127:role/amplify-v087-whatislove-1e788-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-v087-whatislove-1e788-deployment",
+      "UnauthRoleName": "amplify-v087-whatislove-1e788-unauthRole",
+      "StackName": "amplify-v087-whatislove-1e788",
+      "StackId": "arn:aws:cloudformation:us-east-1:528757785127:stack/amplify-v087-whatislove-1e788/168d31e0-abe4-11ef-a8d2-12172cac29db",
+      "AmplifyAppId": "d1km48zpl1jj04"
+    },
+    "categories": {
+      "auth": {
+        "v0871031a9cf": {}
+      }
+    }
   }
 }
