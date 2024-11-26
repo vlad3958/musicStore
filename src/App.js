@@ -13,37 +13,7 @@ import Contact from './Pages/Contact';
 
 
 function App() {
-  const [products, setProducts] = useState(all_products);
-
-  useEffect(() => {
-      // Функция для загрузки данных с API
-      const fetchProducts = async () => {
-          try {
-              const response = await fetch('https://musicshop-api-0d4beebd49be.herokuapp.com/api/Products');
-              const data = await response.json();
-              
-              // Форматирование данных API под структуру all_products
-              const formattedData = data.map((product, index) => ({
-                  id: product.id || index + 1,
-                  name: product.name,
-                  image: product.image , // Замените на изображение по умолчанию, если нужно
-                  price: product.price,
-                  category: product.category  // Замените на категорию по умолчанию, если нужно
-              }));
-              
-              all_products.length = 0; // Очищаем массив
-                all_products.push(...formattedData); // Перезаписываем массив
-                
-                console.log("all_products updated:", all_products); // Лог для проверки
-         
-          } catch (error) {
-              console.error("Ошибка при загрузке данных:", error);
-          }
-      };
-
-      fetchProducts();
-  }, []);
-
+  
 
   return (
     <div className="App">
