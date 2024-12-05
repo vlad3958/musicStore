@@ -78,7 +78,7 @@ const Home = () => {
   return (
     <div>
  <video
-        src="https://vinylmp4.s3.amazonaws.com/vinyl.mp4"
+        src="https://vinylmp4adswgtjaoawo51.s3.us-east-1.amazonaws.com/vinyl.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAXWHDLQITUDHRNWOP%2F20241205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241205T095204Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFoaCXVzLWVhc3QtMSJIMEYCIQDlySSWLVAKSSBvAksyWjOPOgK5VXSHv61oRts0lDP8BwIhAPmyydQ4qR0u393ZmjJOH76%2FAtAKDEwyBmPnWV%2FYn8WZKugCCBMQABoMNTI4NzU3Nzg1MTI3IgyqteIFoCI6tFteO2sqxQLabHc7J0miS3p49y7agPKwHGI%2F1f8glq4AER5i5v63D0DpemxYaR2ntOMDkrl1s5J%2FOOeQvitDb2qfMBnpjYoFGY7Llp42g0OZadJE2CyPaR6%2B1dTthAtkYpWH7DsWNFt5excsOJw0QpVi%2BrZ0IBLvnKlMAsJf7%2FJ0zVtj7ciUpnQNGRwqzbLG0Qy8KbufRYqhXrT8x25lXb%2BcxDuHZw7TTVr6C%2FRpaUFf731leVvSShYN8%2FiWyepUbClwj8Ot0SA4sN0hUce6oWS782DckqN8yr9Haod%2BEqQNB1rN9v2L7iWjacn8TWxg7AD7dra%2FVt9RqvAzLCgpo4sRzbByvFezazpEUbaakaYK1I0l54vD1Xkp5Jpy4Ap5Iv3R3LEh1kqrAQBTOyeUHBOcd%2BtDQovLIcAThq2Bj7S6uMY0O24z2I%2BFXdRvMO3txboGOrICUqjhUsuvBR8xe2%2BjIeRXaDucr82UO%2B9lyAOMtd8CwP%2BBzGZRSmCY0IS38fv1ia9gWpUSZ4o8QJZ3wXjCkvXvIAs9FAytzFRYG1l2YFgJbTOL3fwN2GzIG3pKr%2Bee9IpnT2mp9Kx478GRMPjEEIzpPmCgCzLUdovB%2FywV5VY2SIj7jbcGBgEqtQIUDk%2F5pJr%2BUSxkbn092znlTfQK1O9zcLh%2Bs5pBQY55IvbmYkZ%2F%2BmnXZwOEQ1Rckz0d4ZU3i7KFZrraHA%2Fm4JO5yeiAyFLdRzC5SxV94GVIfEhb3BAncmA34MRvgAJc%2BrP3jp7Jda2Y5Cl7UbX%2FYCNjNqgZzR6hGYlryLTl6lXjQR7bB%2BTwqMqto9z2%2BbmByDrX13Lvu1xUzbthcSScI3lQnGYYxovOYWGp&X-Amz-Signature=db7575540d1a2e7877b14e241bcb9fa6ee74045fd105c58326eacba92af280b1&X-Amz-SignedHeaders=host&response-content-disposition=inline"
         autoPlay
         loop
         muted
