@@ -1,13 +1,18 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import Item from '../Components/Item/Item';
 import NavbarShopItems from '../Components/NavbarShopItems/NavbarShopItems';
 import './css/ShopCategory.css';
 
+
+import { ProductsHook } from '../Components/ProductsHook';
+
 const ShopCategory = (props) => {
-  const { all_products } = useContext(ShopContext);
-  const [sortType, setSortType] = useState(''); // Состояние для сортировки
-  const [searchQuery, setSearchQuery] = useState(''); // Состояние для поискового запроса
+  const products = ProductsHook(); // Получаем продукты из хука
+
+  const [sortType, setSortType] = useState('');  // Состояние для сортировки
+  const [searchQuery, setSearchQuery] = useState(''); // Состояние для поиска
+
 
   // Функция сортировки товаров
   const sortProducts = (products) => {
@@ -30,11 +35,12 @@ const ShopCategory = (props) => {
   };
 
   // Фильтрация по категории
-  const filteredProducts = all_products.filter(item => item.category === props.category);
+  const filteredProducts = products.filter(item => item.category === props.category);
 
   // Применение сортировки и фильтрации
   const sortedProducts = sortProducts(filteredProducts);
   const visibleProducts = filterProductsBySearch(sortedProducts);
+
 
   return (
     <div>
@@ -44,9 +50,9 @@ const ShopCategory = (props) => {
           <label>Find:</label>
           <input
             type="text"
-            placeholder="Type product name"
+            placeholder="Find product"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)} // Обновляем поисковый запрос
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
         <div className="sort-options">
@@ -55,7 +61,7 @@ const ShopCategory = (props) => {
             <option value="">Choose sorting</option>
             <option value="price_asc">Price (ascending)</option>
             <option value="price_desc">Price (descending)</option>
-            <option value="alphabetical">alphabetically</option>
+            <option value="alphabetical">Alphabetically</option>
           </select>
         </div>
       </div>
@@ -66,7 +72,7 @@ const ShopCategory = (props) => {
               <Item key={i} id={item.id} name={item.name} image={item.image} price={item.price} />
             ))
           ) : (
-            <p>Товары не найдены</p>
+            <p>No items</p>
           )}
         </div>
       </div>
